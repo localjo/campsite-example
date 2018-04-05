@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Feature from './components/Feature';
-import { Grid, Row, Col, PageHeader, Panel } from 'react-bootstrap';
+import { Grid, Row, Col, PageHeader, Panel, Glyphicon } from 'react-bootstrap';
 import campsitePhoto from './campsite.jpg';
 import './hipcamp.css';
 import './App.scss';
@@ -46,6 +46,9 @@ class App extends Component {
               <a href="/">
                 <div className="logo-placeholder">&nbsp;</div>
               </a>
+            </div>
+            <div className="collapse">
+              <a className="btn btn-sm btn-primary btn-inverted list-land-btn" href="https://www.hipcamp.com/"><Glyphicon glyph="menu-hamburger"/></a>
             </div>
             <ul className="top-nav">
               <li>
@@ -100,11 +103,13 @@ class App extends Component {
                   <Panel.Title>Campsite Details</Panel.Title>
                 </Panel.Heading>
                 <Panel.Body>
-                  <ul className="feature-list">
-                    {features.map(feature => (
-                      <Feature key={feature.title} feature={feature} />
-                    ))}
-                  </ul>
+                  {(features === null)?<p>Loading...</p>:
+                    <ul className="feature-list">
+                      {features.map(feature => (
+                        <Feature key={feature.title} feature={feature} />
+                      ))}
+                    </ul>
+                  }
                 </Panel.Body>
               </Panel>
             </Col>
