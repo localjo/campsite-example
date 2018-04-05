@@ -1,0 +1,36 @@
+.feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .presence-icon {
+    float: right;
+    font-weight: bold;
+    &.hasFeature {
+      color: #40d9ac;
+    }
+  }
+  .panel {
+    margin-bottom: 10px;
+  }
+  .panel-title {
+    .glyphicon {
+      margin-left: 5px;
+      font-weight: normal;
+      color: rgba(0, 0, 0, 0.3);
+      font-size: 0.9em;
+    }
+    .collapsed {
+      .glyphicon {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  .panel-body {
+    padding: 10px;
+  }
+}
