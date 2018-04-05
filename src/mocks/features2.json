@@ -1,0 +1,50 @@
+[
+   {
+      "title": "Toilet",
+      "presence": false,
+      "subfeatures": []
+   },
+   {
+      "title": "Pets allowed",
+      "presence": true,
+      "subfeatures": [
+         {
+            "title": "Leash required",
+            "presence": false,
+            "subfeatures": []
+         }
+      ]
+   },
+   {
+      "title": "Shower",
+      "presence": false,
+      "subfeatures": []
+   },
+   {
+      "title": "Trash",
+      "presence": false,
+      "subfeatures": [
+         {
+            "title": "Recycling bin",
+            "presence": false,
+            "subfeatures": []
+         },
+         {
+            "title": "Compost bin",
+            "presence": false,
+            "subfeatures": []
+         },
+         {
+            "title": "Trash bin",
+            "presence": false,
+            "subfeatures": [
+               {
+                  "title": "Pack in, pack out",
+                  "presence": true,
+                  "subfeatures": []
+               }
+            ]
+         }
+      ]
+   }
+]
