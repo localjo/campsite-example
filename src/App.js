@@ -32,12 +32,6 @@ class App extends Component {
     });
   }
 
-  componentWillUnmount() {
-    if (this._asyncRequest) {
-      this._asyncRequest.cancel();
-    }
-  }
-
   getNextCampsite() {
     const nextId = this.state.details.id === '1' ? '2' : '1';
     this._asyncRequest = getCampsiteInfoFromAPI(nextId).then(res => {
@@ -81,14 +75,15 @@ class App extends Component {
                     <p>Loading...</p>
                   ) : (
                     <ul className="feature-list">
-                      {features.map(feature => (
-                        <Feature key={feature.title} feature={feature} />
-                      ))}
+                      {features.map(feature => {
+                        if (!feature) return false;
+                        return (<Feature key={feature.title} feature={feature} />)
+                      })}
                     </ul>
                   )}
                 </Panel.Body>
               </Panel>
-              <Button
+              <Button className="next-button"
                 onClick={() => {
                   this.getNextCampsite();
                 }}>
