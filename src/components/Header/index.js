@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Glyphicon } from 'react-bootstrap';
 import './index.scss';
+import logo from './logo.png';
 
 class Header extends Component {
   render() {
@@ -9,7 +10,7 @@ class Header extends Component {
         <div className="left">
           <div className="logo">
             <a href="/">
-              <div className="logo-placeholder"><img src="/logo.png" alt="Campsite"/></div>
+              <div className="logo-placeholder"><img src={logo} alt="Campsite"/></div>
             </a>
           </div>
           <div className="collapse">
