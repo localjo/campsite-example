@@ -9,35 +9,35 @@ class Header extends Component {
         <div className="left">
           <div className="logo">
             <a href="/">
-              <div className="logo-placeholder">&nbsp;</div>
+              <div className="logo-placeholder"><img src="/logo.png" alt="Campsite"/></div>
             </a>
           </div>
           <div className="collapse">
             <a
               className="btn btn-sm btn-primary btn-inverted list-land-btn"
-              href="https://www.hipcamp.com/">
+              href="https://www.example.com/">
               <Glyphicon glyph="menu-hamburger" />
             </a>
           </div>
           <ul className="top-nav">
             <li>
               <label>
-                <a href="https://www.hipcamp.com/discover/">Camping</a>
+                <a href="https://www.example.com/camping/">Camping</a>
               </label>
             </li>
             <li>
               <label>
-                <a href="https://www.hipcamp.com/host/">Hosting</a>
+                <a href="https://www.example.com/hosting/">Hosting</a>
               </label>
             </li>
             <li>
               <label>
-                <a href="https://www.hipcamp.com/fieldscouts">Scouting</a>
+                <a href="https://www.example.com/scouting">Scouting</a>
               </label>
             </li>
             <li>
               <label>
-                <a href="https://www.hipcamp.com/about/">About</a>
+                <a href="https://www.example.com/about/">About</a>
               </label>
             </li>
           </ul>
@@ -46,7 +46,7 @@ class Header extends Component {
           <div className="user-menu" data-logged-out="">
             <a
               className="btn btn-sm btn-primary btn-inverted list-land-btn"
-              href="https://www.hipcamp.com/host">
+              href="https://www.example.com/hosting">
               Start hosting
             </a>
           </div>

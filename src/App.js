@@ -10,7 +10,7 @@ import {
   Panel,
   Glyphicon
 } from 'react-bootstrap';
-import './hipcamp.css';
+import './existing.css';
 import './App.scss';
 import getCampsiteInfoFromAPI from './mocks/api';
 

@@ -3,6 +3,10 @@
     display: none;
     margin-left: 1em;
   }
+  .logo-placeholder img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 992px) {

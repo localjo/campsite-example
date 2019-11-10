@@ -1,5 +1,5 @@
 {
-  "name": "hipcamp-sample",
+  "name": "campsite-sample",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -97,7 +97,7 @@
   "devDependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "node-sass": "^4.8.3",
+    "node-sass": "^4.13.0",
     "sass-loader": "^6.0.7"
   }
 }
